@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mascot.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lil' Reaper</title>
+  </head>
+  <body>
+    <canvas id="lilReaper"></canvas>
+    <dialog id="menuDialog">
+      <h1>Lil' Reaper</h1>
+      <p>
+        Welcome to Lil' Reaper. A game where you collect disturbed souls and put them to rest before they turn into Zombies.
+        Watch out for the souls that have already transformed into Zombies!
+      </p>
+      <form id="mainMenu" name="mainMenu">
+        <button type="submit">Start</button>
+        <fieldset form="mainMenu" name="difficulty">
+          <legend>Choose your Difficulty</legend>
+      
+          <input type="radio" id="easy" value="easy" name="difficulty">
+          <label for="easy">Easy</label><br/>
+      
+          <input type="radio" id="medium" value="medium" name="difficulty" checked>
+          <label for="medium">Medium</label><br/>
+      
+          <input type="radio" id="hard" value="hard" name="difficulty">
+          <label for="hard">Hard</label>
+
+          <input type="radio" id="grim" value="grim" name="difficulty">
+          <label for="grim">Grim</label>
+        </fieldset>
+      </form>
+      <h2>Controls:</h2>
+      <ul>
+        <li>Move using WASD or arrow keys</li>
+        <li>Jump using Spacebar</li>
+        <li>Reap (attack Zombies and collect souls) by left-clicking or pressing R</li>
+        <li>Use an item by right-clicking or pressing SHIFT</li>
+      </ul>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
